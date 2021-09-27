@@ -9,16 +9,23 @@
 <body>
     Personnalisation du skate
     <section>
-        <img src="imageskateboard.png" alt="Skateboard"/>
+        <img src="skateboard.jpeg" alt="Skateboard"/>
+        <br>
         <form action="/action_page.php" method="GET">
-            Choix de l'image de fond :<br>
-            <input type="file" name="myFile"><br><br>
-
-            Ajout d'un autocollant :<br>
-            Texte : 
-            <input type="text" name="autocollant"><br><br>
-
-
+            <fieldset>
+                <legend>Choix de l'image de fond</legend>
+                <input type="file" name="myFile">
+            </fieldset><br>
+            <fieldset>
+                <legend>Ajout d'un autocollant</legend>
+                Texte :
+                <input type="text"><br>
+                Police :
+                <><br>
+                Couleur :
+                <><br>
+            </fieldset>
+            <input type="submit" value="Confirmer">
         </form>
     </section>
 </body>
