@@ -51,22 +51,19 @@ nav{
     grid-column: 1/3;
     grid-row: 1;
     margin-left:270px;
-    font-family: "Rubik";
 }
 
 .home {
     text-align: center;
     grid-column: 2/3;
     grid-row: 1;
-    font-family: "Rubik";
 }
 
 .mail {
-    text-align: center;
+    text-align:center;
     grid-column: 3/3;
     grid-row: 1;
     margin-right: 50px;
-    font-family: "Rubik";
 }
 
 body  {
