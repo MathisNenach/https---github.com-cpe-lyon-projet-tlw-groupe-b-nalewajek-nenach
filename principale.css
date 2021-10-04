@@ -4,6 +4,7 @@ nav{
     background-color: teal;
 }
 div {
+    font-style : oblique;
     font-size: 100px;
     color:silver;
 }
@@ -13,8 +14,14 @@ body  {
 img{
     height: 400px;
     width: 400px;
+    border-radius: 50p ;
+}
+a{
+    
+
 }
 
 p{
-    color : grey;
+    font-size: 25px;
+    color:slategray;
 }
