@@ -6,3 +6,7 @@ img {
 textarea {
     resize: none;
   }
+
+aside {
+    text-align: center;
+}
