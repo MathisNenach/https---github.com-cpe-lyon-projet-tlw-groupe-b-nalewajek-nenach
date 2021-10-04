@@ -10,18 +10,18 @@ div {
 }
 body  {
     text-align  : center;
+    background-color: powderblue;
 }
 img{
     height: 400px;
     width: 400px;
-    border-radius: 50p ;
-}
-a{
-    
-
+    border-radius: 10px ;
+    border-color: palegreen;
+    background-color:powderblue ;
 }
 
 p{
     font-size: 25px;
     color:slategray;
+    text-shadow: black;
 }
