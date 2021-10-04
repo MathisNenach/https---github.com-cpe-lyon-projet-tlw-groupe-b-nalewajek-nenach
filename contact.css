@@ -47,3 +47,12 @@ h1 {
 h2 {
     margin-left: 10px;
 }
+
+h3 {
+    margin-left: 10px
+}
+
+input.bouton {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
