@@ -1,7 +1,20 @@
+nav{
+    height: 150px;
+    font-style : italic;
+    background-color: teal;
+}
+div {
+    font-size: 100px;
+    color:silver;
+}
 body  {
     text-align  : center;
 }
+img{
+    height: 400px;
+    width: 400px;
+}
 
 p{
-    color : black;
+    color : grey;
 }
