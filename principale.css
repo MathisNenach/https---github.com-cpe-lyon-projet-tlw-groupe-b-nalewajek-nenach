@@ -32,6 +32,11 @@ p{
     font-style: italic;
     color:black;
     text-shadow: 5px 3px tan;
+    background-color: rgb(211, 211, 211);
+    border-style :outset;
+    border-radius: 50px ;
+    border-width: 5px;
+    border-color:dimgray;
 }
 a {
     font-size: 25px;
