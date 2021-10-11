@@ -14,6 +14,8 @@ div {
 }
 body  {
     background-image:url("https://wallpaperaccess.com/full/3731611.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 img{
     height: 400px;
