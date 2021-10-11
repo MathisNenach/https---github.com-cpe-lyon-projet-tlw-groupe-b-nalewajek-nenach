@@ -19,11 +19,11 @@ function recupid() {
     var nom;
     var image;
     var prix;
-    for (let b of boards) {
-        if (produit_id == b) {
-            nom = b.name;
-            image = b.img;
-            prix = b.price;
+    for (let x in boards) {
+        if (produit_id == x) {
+            nom = boards[x].name;
+            image = boards[x].img;
+            prix = boards[x].price;
         }
     }
     console.log(nom, image, prix);
