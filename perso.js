@@ -7,25 +7,21 @@ class Produit {
 }
 
 var boards = [
-    new Produit("Skateboard", "skateboard-removebg-preview.png", 69.99),
-    new Produit("Longboard Carving", "longboard1-removebg-preview.png", 99.99),
-    new Produit("Longboard", "longboard2-removebg-preview.png", 119.99),
-    new Produit("Mini-Cruiser", "mini-cruiser-removebg-preview.png", 44.99)
+    new Produit("Skateboard", "images-projet/skateboard-removebg-preview.png", 69.99),
+    new Produit("Longboard Carving", "images-projet/longboard1-removebg-preview.png", 99.99),
+    new Produit("Longboard", "images-projet/longboard2-removebg-preview.png", 119.99),
+    new Produit("Mini-Cruiser", "images-projet/mini-cruiser-removebg-preview.png", 44.99)
 ]
 
 function recupid() {
     let produit_id = new URLSearchParams(window.location.search).get("id");
     console.log(produit_id);
-    var nom;
-    var image;
-    var prix;
-    for (let x in boards) {
-        if (produit_id == x) {
-            nom = boards[x].name;
-            image = boards[x].img;
-            prix = boards[x].price;
-        }
-    }
+    b = boards[produit_id];
+    var nom = b.name;
+    var image = b.img;
+    var prix = b.price;
     console.log(nom, image, prix);
+    document.getElementById("nom").innerHTML ="Personalisation du " + nom;
+    document.getElementById("image").innerHTML = image;
+    document.getElementById("prix").innerHTML = prix;
 }
-
