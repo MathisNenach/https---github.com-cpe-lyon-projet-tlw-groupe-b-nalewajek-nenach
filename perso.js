@@ -1,17 +1,16 @@
 class Produit {
-    constructor(name, id, img, price) {
+    constructor(name, img, price) {
         this.name = name;
-        this.id = id;
         this.img = img;
         this.price = price;
     }
 }
 
-var board = [
-    new Produit("Skateboard", "sk", "skateboard-removebg-preview.png", 69.99),
-    new Produit("Longboard Carving", "lg1", "longboard1-removebg-preview.png", 99.99),
-    new Produit("Longboard", "lg2", "longboard2-removebg-preview.png", 119.99),
-    new Produit("Mini-Cruiser", "mi", "mini-cruiser-removebg-preview.png", 44.99)
+var boards = [
+    new Produit("Skateboard", "skateboard-removebg-preview.png", 69.99),
+    new Produit("Longboard Carving", "longboard1-removebg-preview.png", 99.99),
+    new Produit("Longboard", "longboard2-removebg-preview.png", 119.99),
+    new Produit("Mini-Cruiser", "mini-cruiser-removebg-preview.png", 44.99)
 ]
 
 function recupid() {
@@ -20,11 +19,11 @@ function recupid() {
     var nom;
     var image;
     var prix;
-    for (let x in board) {
-        if (produit_id==board[x][1]) {
-            nom = board[x][0];
-            image = board[x][2];
-            prix = board[x][3];
+    for (let b of boards) {
+        if (produit_id == b) {
+            nom = b.name;
+            image = b.img;
+            prix = b.price;
         }
     }
     console.log(nom, image, prix);
