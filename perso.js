@@ -35,3 +35,20 @@ fetch('perso.json')
     document.getElementById("identifiant").innerHTML = "perso.html?id=" + identifiant;
     document.getElementById("customisation").innerHTML = custom;
 })
+
+
+
+
+let template = document.querySelector("listePlanches");
+    for (let b of boards) {
+    let clone = document.importNode(template.content, true);      
+    newContent = clone.firstElementChild.innerHTML 
+    .replace(/{{nom}}/g, b.nom ) 
+    .replace(/{{image}}/g, b.image)
+    .replace(/{{prix}}/g, b.prix)
+    .replace(/{{identifiant}}/g, b.id)
+    .replace(/{{custom}}/g, b.custom); 
+    clone.firstElementChild.innerHTML = newContent
+    document.body.appendChild(clone);
+    }
+
