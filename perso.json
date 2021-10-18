@@ -1,23 +1,6 @@
-{
-    "name": "Skateboard",
-    "img": "images-projet/skateboard-removebg-preview.png",
-    "price": 69.99
-}
-
-{
-    "name": "Longboard Carving",
-    "img": "images-projet/longboard1-removebg-preview.png",
-    "price": 99.99
-}
-
-{
-    "name": "Longboard",
-    "img": "images-projet/longboard2-removebg-preview.png",
-    "price": 119.99
-}
-
-{
-    "name": "Mini-Cruiser",
-    "img": "images-projet/mini-cruiser-removebg-preview.png",
-    "price": 49.99
-}
+{"produits":[
+    { "name":"Skateboard", "img":"images-projet/skateboard-removebg-preview.png", "price":69.99 },
+    { "name":"Longboard Carving", "img":"images-projet/longboard1-removebg-preview.png", "price":99.99 },
+    { "name":"Longboard", "img":"images-projet/longboard2-removebg-preview.png", "price":119.99 },
+    { "name":"Mini-Cruiser", "img":"images-projet/mini-cruiser-removebg-preview.png", "price":49.99 }
+  ]}
