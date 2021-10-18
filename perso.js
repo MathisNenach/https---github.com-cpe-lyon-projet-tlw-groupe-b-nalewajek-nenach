@@ -22,6 +22,6 @@ function recupid() {
     var prix = b.price;
     console.log(nom, image, prix);
     document.getElementById("nom").innerHTML ="Personalisation du " + nom;
-    document.getElementById("image").innerHTML = image;
+    document.getElementById("image").src = image;
     document.getElementById("prix").innerHTML = prix;
 }
