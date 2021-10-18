@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="perso.js"></script>
+   
 </head>
-<body onload="recupid()">
-    <p id="nom"></p>
+<body>
+    <template id="Produit">
+    <span> Personnalisation du {{name}}</span>
     <section>
-        <img id="image">
+        <img src= {{image}}>
         <br>
+     </template>
         <form action="/action_page.php" method="GET">
             <fieldset>
                 <legend>Choix de l'image de fond</legend>
@@ -30,7 +32,7 @@
                         Arial
                     </option>
                     <option value="fantasy">
-                        Fantasy
+                        Fantasyid="image"
                     </option>
                     <option value="cursive">
                         Cursive
@@ -82,4 +84,5 @@
         </form>
     </aside>
 </body>
+//<script src="perso.js"></script>
 </html>

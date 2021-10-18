@@ -13,15 +13,19 @@ var boards = [
     new Produit("Mini-Cruiser", "images-projet/mini-cruiser-removebg-preview.png", 44.99)
 ]
 
-//function recupid() {
-//    let produit_id = new URLSearchParams(window.location.search).get("id");
-//    console.log(produit_id);
-//    b = boards[produit_id];
-//    var nom = b.name;
-//    var image = b.img;
-//    var prix = b.price;
-//    console.log(nom, image, prix);
-//    document.getElementById("nom").innerHTML ="Personalisation du " + nom;
-//    document.getElementById("image").src = image;
-//    document.getElementById("prix").innerHTML = prix;
-//}
+
+
+
+
+function recupid() {
+    let produit_id = new URLSearchParams(window.location.search).get("id");
+   console.log(produit_id);
+    b = boards[produit_id];
+    var nom = b.name;
+    var image = b.img;
+    var prix = b.price;
+    console.log(nom, image, prix);
+    document.getElementById("nom").innerHTML ="Personalisation du " + nom;
+    document.getElementById("image").src = image;
+    document.getElementById("prix").innerHTML = prix;
+}
