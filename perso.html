@@ -5,50 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-   
+    <script src="perso.js"></script>
 </head>
-<body>
-    <template id="Produit">
-    <span> Personnalisation du {{name}}</span>
+<body onload=recupid()>
+    <p id='nom'></p>
     <section>
-        <img src= {{image}}>
-        <br>
-     </template>
-        <form action="/action_page.php" method="GET">
-            <fieldset>
-                <legend>Choix de l'image de fond</legend>
-                <input type="file" name="myFile">
-            </fieldset><br>
-            <fieldset>
-                <legend>Ajout d'un autocollant</legend>
-                Texte :
-                <input type="text"><br>
-                Police :
-                <select id="input-font" class="input" onchange="changeFontStyle (this);">
-                    <option value="Times new Roman" selected="selected">
-                        Times New Roman
-                    </option>
-                    <option value="Arial">
-                        Arial
-                    </option>
-                    <option value="fantasy">
-                        Fantasyid="image"
-                    </option>
-                    <option value="cursive">
-                        Cursive
-                    </option>
-                </select>
-                <script>
-                    var changeFontStyle = function (font) {document.getElementById("output-text").style.fontFamily = font.value;}
-                </script>
-                Couleur :
-                <><br>
-            </fieldset>
-            <input type="submit" value="Confirmer">
-        </form>
-    </section>
-    <aside>
-        <img src="skateboard.jpeg" alt="Skateboard"/>
+        <img id="image">
         <br>
         <form action="/action_page.php" method="GET">
             <fieldset>
@@ -82,7 +44,6 @@
             </fieldset>
             <input type="submit" value="Confirmer">
         </form>
-    </aside>
+    </section>
 </body>
-//<script src="perso.js"></script>
 </html>
