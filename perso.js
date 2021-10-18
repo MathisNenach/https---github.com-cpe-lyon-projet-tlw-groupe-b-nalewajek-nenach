@@ -31,7 +31,7 @@ fetch('perso.json')
     console.log(nom, image, prix);
     document.getElementById("nom").innerHTML ="Personalisation du " + nom;
     document.getElementById("image").src = "images-projet/" + image;
-    document.getElementById("prix").innerHTML = prix + "$";
+    document.getElementById("prix").innerHTML = prix + "€";
     document.getElementById("identifiant").innerHTML = "perso.html?id=" + identifiant;
     document.getElementById("customisation").innerHTML = custom;
 })
