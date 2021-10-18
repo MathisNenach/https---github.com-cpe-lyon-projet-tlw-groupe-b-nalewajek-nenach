@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body onload="remplirTemplate()">
  <header>
      <nav> 
         <div>SKATE-IT</div>
@@ -20,16 +20,17 @@
    
     
  </header>
- <div class="wrapper">
-   <!-- <template id="listePlanches">
-        <p id = {{nom}}></p></br>
-        <a  href={{identifiant}}>
-        <img class={{custom}} src={{image}}></a></br>
-        <p id={{prix}}></p> 
-        
-    </template>-->
+ <div class="wrapper" id="grille">
+  <template id="listePlanches">
+        <div>
+            <p> {{nom}} </p>
+            <a  href={{identifiant}}>
+            <img class={{custom}} src={{image}}></a></br>
+            <p >{{prix}}</p> 
+        </div>
+    </template>
 
- <a  href="perso.html?id=2">
+ <!--  <a  href="perso.html?id=2">
      <img class="im-long2" src="images-projet/longboard2-removebg-preview.png"></a></br>
  <p class= "d-long2"> Skateboard dédié à la balade et la descente,</br> 
     le longboard est le skate le plus long et le plus lourd des trois variantes.</br> 
@@ -56,7 +57,7 @@
  <a href="perso.html?id=0"><img class="im-skate" src="images-projet/skateboard-removebg-preview.png"></a></br>
 <p class= d-skate>Planche la plus vendue, il s’agit du skate prévu pour faire du street,</br>
     aller dans les skateparks et faire de la rampe.
-</p>
+</p>-->
 </div>
 
 

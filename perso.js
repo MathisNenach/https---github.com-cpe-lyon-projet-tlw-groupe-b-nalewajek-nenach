@@ -15,40 +15,41 @@ var boards = [
     JSON.parse('{ "name":"Mini-Cruiser", "img":"mini-cruiser-removebg-preview.png", "price":49.99, "id":3, "custom":"im-mini" }')
 ]
 
-fetch('perso.json')
-.then(function(response) {
-    return response.json();
-})
-.then(function recupid() {
-    let produit_id = new URLSearchParams(window.location.search).get("id");
-    console.log(produit_id);
-    b = boards[produit_id];
-    var nom = b.name;
-    var image = b.img;
-    var prix = b.price;
-    var identifiant = b.id;
-    var customisation = b.custom;
-    console.log(nom, image, prix);
-    document.getElementById("nom").innerHTML ="Personalisation du " + nom;
-    document.getElementById("image").src = "images-projet/" + image;
-    document.getElementById("prix").innerHTML = prix + "€";
-    document.getElementById("identifiant").innerHTML = "perso.html?id=" + identifiant;
-    document.getElementById("customisation").innerHTML = customisation;
-})
-
-
-
-
-let template = document.querySelector("#listePlanches");
-    for (let b of boards) {
-    let clone = document.importNode(template.content, true);      
-    newContent = clone.firstElementChild.innerHTML 
-    .replace(/{{nom}}/g, b.name) 
-    .replace(/{{image}}/g,b.img)
-    .replace(/{{prix}}/g, b.price)
-    .replace(/{{identifiant}}/g, "perso.html?id=" + b.id)
-    .replace(/{{custom}}/g, b.custom); 
-    clone.firstElementChild.innerHTML = newContent
-    document.body.appendChild(clone);
+function loadData() {
+    fetch('perso.json')
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function recupid() {
+        let produit_id = new URLSearchParams(window.location.search).get("id");
+        console.log(produit_id);
+        b = boards[produit_id];
+        var nom = b.name;
+        var image = b.img;
+        var prix = b.price;
+        var identifiant = b.id;
+        var customisation = b.custom;
+        console.log(nom, image, prix);
+        document.getElementById("nom").innerHTML ="Personalisation du " + nom;
+        document.getElementById("image").src = "images-projet/" + image;
+        document.getElementById("prix").innerHTML = prix + "€";
+        document.getElementById("identifiant").innerHTML = "perso.html?id=" + identifiant;
+        document.getElementById("customisation").innerHTML = customisation;
+    })
 }
 
+function remplirTemplate()  {
+    let template = document.querySelector("#listePlanches");
+    for (let b of boards) {
+        let clone = document.importNode(template.content, true);      
+        newContent = clone.firstElementChild.innerHTML 
+        .replace(/{{nom}}/g, b.name) 
+        .replace(/{{image}}/g,"images-projet/" + b.img)
+        .replace(/{{prix}}/g, b.price + "€")
+        .replace(/{{identifiant}}/g, "perso.html?id=" + b.id)
+        .replace(/{{custom}}/g, b.custom);
+
+        clone.firstElementChild.innerHTML = newContent
+        document.getElementById("grille").appendChild(clone);
+    }
+}

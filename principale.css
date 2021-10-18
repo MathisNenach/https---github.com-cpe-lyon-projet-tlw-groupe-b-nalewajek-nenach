@@ -10,7 +10,7 @@ div {
     text-align: center;
     font-style : oblique;
     font-size: 100px;
-    color:silver;
+    color:yellow;
 }
 body  {
     background-image:url("https://wallpaperaccess.com/full/3731611.jpg");
@@ -19,8 +19,8 @@ body  {
 
 }
 img{
-    height: 400px;
-    width: 400px;
+    height: 500px;
+    width: 500px;
     border-style :outset;
     border-radius: 50px ;
     border-width: 5px;
@@ -28,15 +28,12 @@ img{
 }
 
 p{
-    font-size: 25px;
+    font-size: 50px;
     font-style: italic;
-    color:black;
-    text-shadow: 5px 3px tan;
-    background-color: rgb(211, 211, 211);
-    border-style :outset;
-    border-radius: 50px ;
-    border-width: 5px;
-    border-color:dimgray;
+    color:white;
+    text-shadow: 3px 2px tan;
+    
+    
 }
 a {
     font-size: 25px;
@@ -50,13 +47,14 @@ a {
 .wrapper {
     display : grid;
     grid-template-columns:repeat(3, 1fr);
-    grid-gap : 10px;
+    grid-gap : 25px;
     grid-auto-rows:minmax(100px,auto)
+
    
   
 }
     .im-long1 {
-        background-color: rgb(240, 224, 193);
+        background-color:rgb(240, 224, 193);
         grid-column:1 ;
         grid-row: auto;
   }
@@ -78,20 +76,4 @@ a {
         grid-column: auto;
         grid-row: auto;
   }
-    .d-long1{
-        grid-column: auto;
-        grid-row: auto;
-
-  }
-    .d-long2{
-        grid-column: auto;
-        grid-row: auto;
-  }
-    .d_mini{
-        grid-column: auto;
-        grid-row: auto;
-}
-    .d-skate{
-        grid-column: auto;
-        grid-row: auto;
-     }
+    
