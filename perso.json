@@ -1,5 +1,6 @@
-{
-    "name": "Skateboard",
-    "img": "images-projet/skateboard-removebg-preview.png",
-    "price": 69.99,
-}
+{"produits":[
+    { "name":"Skateboard", "img":"skateboard-removebg-preview.png", "price":69.99 },
+    { "name":"Longboard Carving", "img":"longboard1-removebg-preview.png", "price":99.99 },
+    { "name":"Longboard", "img":"longboard2-removebg-preview.png", "price":119.99 },
+    { "name":"Mini-Cruiser", "img":"mini-cruiser-removebg-preview.png", "price":49.99 }
+  ]}

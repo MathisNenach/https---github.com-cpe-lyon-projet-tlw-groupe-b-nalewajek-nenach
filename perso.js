@@ -7,25 +7,25 @@ class Produit {
 }
 
 var boards = [
-    new Produit("Skateboard", "images-projet/skateboard-removebg-preview.png", 69.99),
-    new Produit("Longboard Carving", "images-projet/longboard1-removebg-preview.png", 99.99),
-    new Produit("Longboard", "images-projet/longboard2-removebg-preview.png", 119.99),
-    new Produit("Mini-Cruiser", "images-projet/mini-cruiser-removebg-preview.png", 44.99)
+    JSON.parse('{ "name":"Skateboard", "img":"skateboard-removebg-preview.png", "price":69.99 }'),
+    JSON.parse('{ "name":"Longboard Carving", "img":"longboard1-removebg-preview.png", "price":99.99 }'),
+    JSON.parse('{ "name":"Longboard", "img":"longboard2-removebg-preview.png", "price":119.99 }'),
+    JSON.parse('{ "name":"Mini-Cruiser", "img":"mini-cruiser-removebg-preview.png", "price":49.99 }')
 ]
 
-
-
-
-
-function recupid() {
+fetch('perso.json')
+.then(function(response) {
+    return response.json();
+})
+.then(function recupid() {
     let produit_id = new URLSearchParams(window.location.search).get("id");
-   console.log(produit_id);
+    console.log(produit_id);
     b = boards[produit_id];
     var nom = b.name;
     var image = b.img;
     var prix = b.price;
     console.log(nom, image, prix);
     document.getElementById("nom").innerHTML ="Personalisation du " + nom;
-    document.getElementById("image").src = image;
+    document.getElementById("image").src = "images-projet/" + image;
     document.getElementById("prix").innerHTML = prix;
-}
+})
