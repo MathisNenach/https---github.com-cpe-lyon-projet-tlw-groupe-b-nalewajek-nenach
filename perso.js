@@ -33,22 +33,22 @@ fetch('perso.json')
     document.getElementById("image").src = "images-projet/" + image;
     document.getElementById("prix").innerHTML = prix + "€";
     document.getElementById("identifiant").innerHTML = "perso.html?id=" + identifiant;
-    document.getElementById("customisation").innerHTML = custom;
+    document.getElementById("customisation").innerHTML = customisation;
 })
 
 
 
 
-let template = document.querySelector("listePlanches");
+let template = document.querySelector("#listePlanches");
     for (let b of boards) {
     let clone = document.importNode(template.content, true);      
     newContent = clone.firstElementChild.innerHTML 
-    .replace(/{{nom}}/g, b.nom ) 
-    .replace(/{{image}}/g, b.image)
-    .replace(/{{prix}}/g, b.prix)
-    .replace(/{{identifiant}}/g, b.id)
+    .replace(/{{nom}}/g, b.name) 
+    .replace(/{{image}}/g,b.img)
+    .replace(/{{prix}}/g, b.price)
+    .replace(/{{identifiant}}/g, "perso.html?id=" + b.id)
     .replace(/{{custom}}/g, b.custom); 
     clone.firstElementChild.innerHTML = newContent
     document.body.appendChild(clone);
-    }
+}
 
