@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Miltonian+Tattoo&family=ZCOOL+KuaiLe&family=ZCOOL+QingKe+HuangYou&display=swap');
+
+
 nav{
     height: 150px;
     font-style : italic;
@@ -8,15 +11,17 @@ nav{
 
 div {
     text-align: center;
-    font-style : oblique;
+    font-family:"ZCOOL KuaiLe" ;
     font-size: 100px;
     color:yellow;
+    
 }
+
 body  {
     background-image:url("https://wallpaperaccess.com/full/3731611.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-
+    
 }
 img{
     height: 500px;
@@ -25,6 +30,8 @@ img{
     border-radius: 50px ;
     border-width: 5px;
     border-color:white;
+    background-color: rgb(240, 224, 193);
+  
 }
 
 p{
@@ -35,45 +42,37 @@ p{
     
     
 }
-a {
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     font-size: 25px;
     font-style: normal;
     font-weight: lighter;
     color :rgb(243, 243, 188);
     border-radius: 5px;
+    top:0;
+    display: flex;
+    width :100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: chocolate;
+
     
 }
 
+li a {
+    text-decoration: double;
+    font-family: "ZCOOL QingKe HuangYou" ;
+    color: black;
+    font-size: 30px;
+}
+
+
 .wrapper {
     display : grid;
-    grid-template-columns:repeat(3, 1fr);
-    grid-gap : 25px;
-    grid-auto-rows:minmax(100px,auto)
-
-   
-  
+    grid-template-columns: auto auto ;
+    
 }
-    .im-long1 {
-        background-color:rgb(240, 224, 193);
-        grid-column:1 ;
-        grid-row: auto;
-  }
-
-    .im-long2 {
-        background-color: rgb(240, 224, 193);
-        grid-column: 2;
-        grid-row: 1;
-  }
-
-    .im-mini {
-        background-color: rgb(240, 224, 193);
-        grid-column: 3;
-        grid-row: 1;  
-  }
-
-    .im-skate {
-        background-color: rgb(240, 224, 193);
-        grid-column: auto;
-        grid-row: auto;
-  }
+        
     
